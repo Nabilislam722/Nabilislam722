@@ -30,5 +30,5 @@ Here are some of the technologies I've been working with:
 
 [![Profile Views](https://visitcount.itsvg.in/api?id=Nabilislam722&icon=0&color=1)](https://visitcount.itsvg.in)
 
-![GitHub Snake](https://github.com/Nabilislam722/Nabilislam722/blob/output/github-contribution-grid-snake.svg)
+![snake gif](https://github.com/Nabilislam722/Nabilislam722/blob/output/github-contribution-grid-snake.gif)
 
