@@ -1,12 +1,9 @@
-Here’s an updated version of your GitHub profile content with all your interests included:
-
----
 
 # 👋 Hello
 
 Hi, I'm Nabil. I'm from Bangladesh. And fun fact: I don't know what to call myself because I'm curious about so many things! I’m currently exploring **embedded systems programming** and **reverse engineering**. I’m passionate about understanding how modern technology works, particularly **CPUs**, **assembly language**, and how **electromagnetic waves** (like **radio**, **military-grade jammers**, **radar**, and **fighter jets**) are utilized.  
 
-I'm also fascinated by **space exploration** and always on a quest for the unknown. My hobbies include **programming**, **FPV drones**, **computers**, **electronics circuits**, **cryptocurrency**, **traveling**, and **watching anime**. I’m searching for new knowledge in areas like **deep learning** on **ALUs**, control panels, and how logic gates are built in modern CPUs.
+I'm also fascinated by **space exploration** and always on a quest for the unknown. My hobbies include **programming**, **FPV drones**, **computers**, **electronics circuits**, **cryptocurrency**, **traveling**, and **watching anime**. I’m searching for new knowledge in areas like **deep learning** on **ALUs**, **control panels**, and how **logic gates** are built in modern CPUs.
 
 I’m looking to collaborate on **kernel and OS design**, as well as **software development**. Feel free to reach out if you'd like to chat or collaborate. I'm always open to learning and contributing to exciting projects.
 
@@ -30,12 +27,8 @@ Here are some of the technologies I've been working with:
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Nabilislam722&theme=dark&hide_border=true&include_all_commits=true&count_private=false)<br/>
 
 
----
 
 [![Profile Views](https://visitcount.itsvg.in/api?id=Nabilislam722&icon=0&color=1)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+![GitHub Snake](https://github.com/Nabilislam722/Nabilislam722/blob/output/github-contribution-grid-snake.svg)
 
----
-
-This version now includes your broader range of interests such as **FPV drones**, **computers**, **space exploration**, **military technology**, and more.
