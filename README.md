@@ -11,10 +11,13 @@ I'm also fascinated by **space exploration** and always on a quest for the unkno
 I’m looking to collaborate on **kernel and OS design**, as well as **software development**. Feel free to reach out if you'd like to chat or collaborate. I'm always open to learning and contributing to exciting projects.
 
 ## 🌐 Socials:
-[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/alpha963)
-[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/nabilislam722)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/nabil-islam-925958232)
-[![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/Nabil_islam722)
+<p align="left">
+<a href="https://twitter.com/nabil_islam722" target="blank"><img align="center" src="https://img.shields.io/badge/X-black.svg" alt="nabil_islam722" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/nabil-islam-925958232" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="nabil-islam-925958232" height="30" width="40" /></a>
+<a href="https://fb.com/nabilislam722" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="nabilislam722" height="30" width="40" /></a>
+<a href="https://www.leetcode.com/nabilislam722" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="nabilislam722" height="30" width="40" /></a>
+<a href="https://discord.gg/alpha963" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="alpha963" height="30" width="40" /></a>
+</p>
 
 ## 💻 Tech Stack:
 Here are some of the technologies I've been working with:
