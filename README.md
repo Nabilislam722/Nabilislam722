@@ -12,7 +12,7 @@ I’m looking to collaborate on **kernel and OS design**, as well as **software 
 
 ## 🌐 Socials:
 <p align="left">
-<a href="https://twitter.com/nabil_islam722" target="blank"><img align="center" src="https://img.shields.io/badge/X-black.svg" alt="nabil_islam722" height="30" width="40" /></a>
+<a href="https://twitter.com/nabil_islam722" target="blank"><img align="center" src="https://img.shields.io/badge/X-black.svg" alt="nabil_islam722" height="30" width="30" /></a>
 <a href="https://linkedin.com/in/nabil-islam-925958232" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="nabil-islam-925958232" height="30" width="40" /></a>
 <a href="https://fb.com/nabilislam722" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="nabilislam722" height="30" width="40" /></a>
 <a href="https://www.leetcode.com/nabilislam722" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="nabilislam722" height="30" width="40" /></a>
