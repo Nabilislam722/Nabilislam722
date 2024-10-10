@@ -1,5 +1,5 @@
 
-# 👋 Hello
+**# 👋 Hello**
 
 Hi, I'm Nabil. I'm from Bangladesh. And fun fact: I don't know what to call myself because I'm curious about so many things! I’m currently exploring **embedded systems programming** and **reverse engineering**. I’m passionate about understanding how modern technology works, particularly **CPUs**, **assembly language**, and how **electromagnetic waves** (like **radio**, **military-grade jammers**, **radar**) are utilized.  
 
