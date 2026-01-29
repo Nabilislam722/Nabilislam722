@@ -24,7 +24,7 @@ Here are some of the technologies I've been working with:
 
 ## 📊 GitHub Stats:
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Nabilislam722&theme=dark&hide_border=true&include_all_commits=true&count_private=false&layout=compact)
-![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=Nabilislam722&theme=dark&hide_border=true)<br/>
+[![GitHub Streak](https://streak-stats.demolab.com?user=Nabilislam722&theme=transparent)](https://git.io/streak-stats)<br/>
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Nabilislam722&theme=dark&hide_border=true&include_all_commits=true&count_private=false)<br/>
 
 
