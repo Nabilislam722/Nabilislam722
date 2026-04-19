@@ -2,9 +2,10 @@
 
 # نبيل · Nabil Islam
 
-**Full-Stack Developer · Builder · Product Designer**
+**Full-Stack Developer · Embedded Systems · Blockchain**
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=700&lines=Building+Products+with+React+%26+TypeScript;Designed+%26+Built+an+NFT+Marketplace;Exploring+Embedded+%26+Low-Level+Systems;From+Idea+to+Working+System;Always+learning%2C+always+building)](https://git.io/typing-svg)
+
 <p>
   <a href="https://twitter.com/nabil_islam722"><img src="https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white" /></a>
   <a href="https://linkedin.com/in/nabil-islam-925958232"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
@@ -21,33 +22,15 @@
 
 ## 🧠 About Me
 
-Hi, I'm Nabil from Bangladesh. And fun fact: I don't know what to call myself because I'm curious about so many things!
-Currently exploring **embedded systems programming** and **reverse engineering**, while building real-world applications using **JavaScript, TypeScript, React, Tailwind CSS, and Framer Motion**. Also worked with **Solidity** and developed an **NFT marketplace from scratch**, handling both frontend and backend logic.
-Passionate about understanding how modern technology works—especially **CPUs**, **assembly language**, and how **electromagnetic waves** (like **radio** and **radar**) are utilized.
-Also enjoy **product design and animation**, using tools like **Figma** to bring ideas to life.
-Fascinated by **space exploration** and always curious about the unknown. Interests include **programming**, **FPV drones**, **computers**, **electronics circuits**, **cryptocurrency**, **traveling**, and **anime**.
+I'm **Nabil** — a developer from Bangladesh who builds real-world applications and digs deep into how technology works at the lowest level.
 
----
+On the **product side**, I work with React, TypeScript, Tailwind CSS, and Framer Motion to build polished UIs — and I've shipped a full-stack **NFT marketplace from scratch**, including Solidity smart contracts and blockchain integration. I also use **Figma** to design before I build.
 
-### 🧠 Focus
-- **Exploring:** Embedded systems, reverse engineering, low-level concepts  
-- **Interested in:** CPUs, memory systems, ALUs, control logic  
+On the **systems side**, I'm fascinated by CPUs, assembly language, embedded hardware, and electromagnetic systems like radio and radar. I want to understand not just *how* to use technology, but *why* it works the way it does.
 
-### 🛠️ Tech
-- **Frontend:** JavaScript, TypeScript, React, Tailwind, Framer Motion  
-- **Backend:** Node.js, Express  
-- **Blockchain:** Solidity, ethers.js  
-
-### 🚀 Projects
-- Built an **NFT marketplace from scratch** (full-stack + blockchain integration)
-
-### 🌍 Languages
-- বাংলা (Native)  
-- English (Working proficiency)  
-- 日本語 (Learning)  
-
-### 🤝 Collaboration
-- Open to **software development**, **kernel/OS design**, and experimental projects  
+- 🔬 **Currently exploring:** ARM bare-metal development, software-defined radio (SDR), OS internals
+- 🤝 **Open to:** Software development, kernel/OS design, embedded firmware, experimental projects
+- 🌍 **Languages:** বাংলা (Native) · English (Working proficiency) · 日本語 (Learning)
 
 ---
 
@@ -76,22 +59,37 @@ Fascinated by **space exploration** and always curious about the unknown. Intere
 ![Arduino](https://img.shields.io/badge/Arduino-%2300979D.svg?style=for-the-badge&logo=Arduino&logoColor=white)
 
 ### 🌐 Web & Application
-![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-%233178C6.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
 ![React](https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-%2306B6D4.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-%230055FF.svg?style=for-the-badge&logo=framer&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-%23339933.svg?style=for-the-badge&logo=node.js&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
+![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-%234479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+
+### ⛓️ Blockchain
+![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white)
+![Ethereum](https://img.shields.io/badge/Ethereum-%233C3C3D.svg?style=for-the-badge&logo=ethereum&logoColor=white)
 
 ### ☁️ Tools & Platforms
 ![Git](https://img.shields.io/badge/Git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![Blender](https://img.shields.io/badge/Blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white)
 ![Unity](https://img.shields.io/badge/Unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
 ![Photoshop](https://img.shields.io/badge/Adobe%20Photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white)
+
+---
+
+## 🚀 What I'm Working On
+
+- 🔩 Deep-diving into **bare-metal embedded development** on ARM Cortex-M
+- 📡 Experimenting with **software-defined radio (SDR)** and signal analysis
+- 🧩 Studying **OS internals** — memory latching, context switching, scheduler design
+- ✈️ Building and flying **FPV drones** (hobby + applied electronics)
 
 ---
 
@@ -108,16 +106,7 @@ Fascinated by **space exploration** and always curious about the unknown. Intere
 
 ---
 
-## 🚀 What I'm Working On
-
-- 🔩 Deep-diving into **bare-metal embedded development** on ARM Cortex-M
-- 📡 Experimenting with **software-defined radio (SDR)** and signal analysis
-- 🧩 Studying **OS internals** — memory latching, context switching, scheduler design
-- ✈️ Building and flying **FPV drones** (hobby + applied electronics)
-
----
-
-## 🌌 Side Quests
+## 🌌 Philosophy
 
 > *"The more I learn, the more I realize how deep the rabbit hole goes."*
 
