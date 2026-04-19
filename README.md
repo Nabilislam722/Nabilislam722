@@ -91,7 +91,7 @@ On the **systems side**, I'm fascinated by CPUs, assembly language, embedded har
 - 🔩 Deep-diving into **bare-metal embedded development** on ARM Cortex-M with Radxa Dragon Q6A
 - 🧩 Studying **OS internals** — memory latching, context switching, scheduler design
 - ✈️ Building and flying **FPV drones** (hobby + applied electronics)
-
+ Planning to buy an Adam pluto sdr from Analog devices 
 ---
 
 ## 📊 GitHub Stats
