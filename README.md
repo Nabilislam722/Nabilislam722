@@ -46,8 +46,8 @@ On the **systems side**, I'm fascinated by CPUs, assembly language, embedded har
 │  OS & Kernel Design   │  Memory mgmt, scheduling, syscalls   │
 └─────────────────────────────────────────────────────────────┘
 
-(https://github.com/Nabilislam722/Nabilislam722/blob/main/34854.jpg.jpeg)
 ```
+(https://github.com/Nabilislam722/Nabilislam722/blob/main/34854.jpg.jpeg)
 
 ---
 
