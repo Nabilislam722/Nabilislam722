@@ -7,7 +7,6 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=700&lines=Building+Products+with+React+%26+TypeScript;Designed+%26+Built+an+NFT+Marketplace;Exploring+Embedded+%26+Low-Level+Systems;From+Idea+to+Working+System;Always+learning%2C+always+building)](https://git.io/typing-svg)
 
 <p>
-  <a href="https://twitter.com/nabil_islam722"><img src="https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white" /></a>
   <a href="https://linkedin.com/in/nabil-islam-925958232"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://fb.com/nabilislam722"><img src="https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white" /></a>
   <a href="https://www.leetcode.com/nabilislam722"><img src="https://img.shields.io/badge/LeetCode-%23FFA116.svg?style=for-the-badge&logo=LeetCode&logoColor=black" /></a>
