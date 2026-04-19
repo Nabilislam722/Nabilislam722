@@ -2,10 +2,9 @@
 
 # نبيل · Nabil Islam
 
-**Embedded Systems · Reverse Engineering · Low-Level Programming**
+**Full-Stack Developer · Builder · Product Designer**
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Embedded+Systems+%26+Reverse+Engineer;Low-Level+%7C+Assembly+%7C+CPU+Architecture;Kernel+%26+OS+Design+Enthusiast;Always+exploring+how+things+work+underneath)](https://git.io/typing-svg)
-
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=700&lines=Building+Products+with+React+%26+TypeScript;Designed+%26+Built+an+NFT+Marketplace;Exploring+Embedded+%26+Low-Level+Systems;From+Idea+to+Working+System;Always+learning%2C+always+building)](https://git.io/typing-svg)
 <p>
   <a href="https://twitter.com/nabil_islam722"><img src="https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white" /></a>
   <a href="https://linkedin.com/in/nabil-islam-925958232"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
@@ -22,13 +21,33 @@
 
 ## 🧠 About Me
 
-I'm a **self-driven systems thinker** from Bangladesh with a deep passion for understanding technology at its lowest levels — from silicon logic gates to radio waves. I don't just use technology; I reverse-engineer it, rebuild it, and try to understand *why* it works the way it does.
+Hi, I'm Nabil from Bangladesh. And fun fact: I don't know what to call myself because I'm curious about so many things!
+Currently exploring **embedded systems programming** and **reverse engineering**, while building real-world applications using **JavaScript, TypeScript, React, Tailwind CSS, and Framer Motion**. Also worked with **Solidity** and developed an **NFT marketplace from scratch**, handling both frontend and backend logic.
+Passionate about understanding how modern technology works—especially **CPUs**, **assembly language**, and how **electromagnetic waves** (like **radio** and **radar**) are utilized.
+Also enjoy **product design and animation**, using tools like **Figma** to bring ideas to life.
+Fascinated by **space exploration** and always curious about the unknown. Interests include **programming**, **FPV drones**, **computers**, **electronics circuits**, **cryptocurrency**, **traveling**, and **anime**.
 
-- 🔬 **Currently exploring:** Embedded systems programming, CPU micro-architecture, and RF/electromagnetic systems (radio, radar, signal analysis)
-- 🛠️ **Building toward:** Kernel & OS design, custom hardware interfaces, and low-level software toolchains
-- 🌱 **Learning right now:** Advanced ARM assembly, memory management internals, and 日本語 (Japanese)
-- 🤝 **Open to collaborate on:** Kernel/OS design, embedded firmware, reverse engineering tools, and systems-level software
-- 🌍 **Languages:** বাংলা (native) · English · 日本語 (learning)
+---
+
+### 🧠 Focus
+- **Exploring:** Embedded systems, reverse engineering, low-level concepts  
+- **Interested in:** CPUs, memory systems, ALUs, control logic  
+
+### 🛠️ Tech
+- **Frontend:** JavaScript, TypeScript, React, Tailwind, Framer Motion  
+- **Backend:** Node.js, Express  
+- **Blockchain:** Solidity, ethers.js  
+
+### 🚀 Projects
+- Built an **NFT marketplace from scratch** (full-stack + blockchain integration)
+
+### 🌍 Languages
+- বাংলা (Native)  
+- English (Working proficiency)  
+- 日本語 (Learning)  
+
+### 🤝 Collaboration
+- Open to **software development**, **kernel/OS design**, and experimental projects  
 
 ---
 
