@@ -28,7 +28,7 @@ On the **product side**, I work with React, TypeScript, Tailwind CSS, and Framer
 
 On the **systems side**, I'm fascinated by CPUs, assembly language, embedded hardware, and electromagnetic systems like radio and radar. I want to understand not just *how* to use technology, but *why* it works the way it does.
 
-- 🔬 **Currently exploring:** ARM bare-metal development, software-defined radio (SDR), OS internals
+- 🔬 **Currently exploring:** ARM bare-metal development, software-defined radio (SDR), OS internals with Radxa Dragon Q6A
 - 🤝 **Open to:** Software development, kernel/OS design, embedded firmware, experimental projects
 - 🌍 **Languages:** বাংলা (Native) · English (Working proficiency) · 日本語 (Learning)
 
@@ -71,6 +71,7 @@ On the **systems side**, I'm fascinated by CPUs, assembly language, embedded har
 ![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-%234479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-%23F38020.svg?style=for-the-badge&logo=cloudflare&logoColor=white)
 
 ### ⛓️ Blockchain
 ![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white)
@@ -88,7 +89,7 @@ On the **systems side**, I'm fascinated by CPUs, assembly language, embedded har
 
 ## 🚀 What I'm Working On
 
-- 🔩 Deep-diving into **bare-metal embedded development** on ARM Cortex-M
+- 🔩 Deep-diving into **bare-metal embedded development** on ARM Cortex-M with Radxa Dragon Q6A
 - 📡 Experimenting with **software-defined radio (SDR)** and signal analysis
 - 🧩 Studying **OS internals** — memory latching, context switching, scheduler design
 - ✈️ Building and flying **FPV drones** (hobby + applied electronics)
