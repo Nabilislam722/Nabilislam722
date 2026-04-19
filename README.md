@@ -113,6 +113,7 @@ On the **systems side**, I'm fascinated by CPUs, assembly language, embedded har
 > *"The more I learn, the more I realize how deep the rabbit hole goes."*
 
 Outside of engineering, I find inspiration in **space exploration**, **antenna theory**, and the intersection of physics and computation. I believe the best engineers are the ones who stay endlessly curious.
+I love flying Fpv drones. call me a Fpv pilot too Hahaahah
 
 ---
 
