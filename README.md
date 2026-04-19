@@ -1,6 +1,6 @@
 <div align="center">
 
-# نبيل · Nabil Islam
+# Nabil Islam
 
 **Full-Stack Developer · Embedded Systems · Blockchain**
 
