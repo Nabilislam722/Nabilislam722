@@ -1,35 +1,116 @@
+<div align="center">
 
-# 👋 Hello
+# نبيل · Nabil Islam
 
-Hi, I'm Nabil. I'm from Bangladesh. And fun fact: I don't know what to call myself because I'm curious about so many things! I’m currently exploring **embedded systems programming** and **reverse engineering**. I’m passionate about understanding how modern technology works, particularly **CPUs**, **assembly language**, and how **electromagnetic waves** (like **radio**, **military-grade jammers**, **radar**) are utilized.  
+**Embedded Systems · Reverse Engineering · Low-Level Programming**
 
-I am a native Bangla speaker, English is my second language & currently learning 日本語 (Japanese).
-I'm also fascinated by **space exploration** and always on a quest for the unknown. My hobbies include **programming**, **FPV drones**, **computers**, **electronics circuits**, **cryptocurrency**, **traveling**, and **watching anime**. I’m searching for new knowledge in areas like **deep learning** on **ALUs**, **control panels**, **Memory latching** and how **logic gates** are built in modern CPUs.
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Embedded+Systems+%26+Reverse+Engineer;Low-Level+%7C+Assembly+%7C+CPU+Architecture;Kernel+%26+OS+Design+Enthusiast;Always+exploring+how+things+work+underneath)](https://git.io/typing-svg)
 
-I’m looking to collaborate on **kernel and OS design**, as well as **software development**. Feel free to reach out if you'd like to chat or collaborate. I'm always open to learning and contributing to exciting projects.
-
-## 🌐 Socials:
-<p align="left">
-<a href="https://twitter.com/nabil_islam722" target="blank"><img align="center" src="https://img.shields.io/badge/X-black.svg" alt="nabil_islam722" height="30" width="30" /></a>
-<a href="https://linkedin.com/in/nabil-islam-925958232" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="nabil-islam-925958232" height="30" width="40" /></a>
-<a href="https://fb.com/nabilislam722" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="nabilislam722" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/nabilislam722" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="nabilislam722" height="30" width="40" /></a>
-<a href="https://discord.gg/alpha963" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="alpha963" height="30" width="40" /></a>
+<p>
+  <a href="https://twitter.com/nabil_islam722"><img src="https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white" /></a>
+  <a href="https://linkedin.com/in/nabil-islam-925958232"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://fb.com/nabilislam722"><img src="https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white" /></a>
+  <a href="https://www.leetcode.com/nabilislam722"><img src="https://img.shields.io/badge/LeetCode-%23FFA116.svg?style=for-the-badge&logo=LeetCode&logoColor=black" /></a>
+  <a href="https://discord.gg/alpha963"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" /></a>
 </p>
 
-## 💻 Tech Stack:
-Here are some of the technologies I've been working with:
+![Profile Views](https://komarev.com/ghpvc/?username=Nabilislam722&color=00d9ff&style=for-the-badge)
 
-<p align="left"> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://www.blender.org/" target="_blank" rel="noreferrer"><img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.javascript.com/" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303206/javascript-logo.svg" alt="objectivec" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://www.rust-lang.org" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" alt="rust" width="40" height="40"/> </a>  <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> </p>
+</div>
 
-## 📊 GitHub Stats:
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Nabilislam722&theme=dark&hide_border=true&include_all_commits=true&count_private=false&layout=compact)
-[![GitHub Streak](https://streak-stats.demolab.com/?user=Nabilislam722)](https://git.io/streak-stats)<br/>
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Nabilislam722&theme=dark&hide_border=true&include_all_commits=true&count_private=false)<br/>
+---
 
+## 🧠 About Me
 
+I'm a **self-driven systems thinker** from Bangladesh with a deep passion for understanding technology at its lowest levels — from silicon logic gates to radio waves. I don't just use technology; I reverse-engineer it, rebuild it, and try to understand *why* it works the way it does.
 
-![](https://komarev.com/ghpvc/?username=Nabilislam722&color=green)
+- 🔬 **Currently exploring:** Embedded systems programming, CPU micro-architecture, and RF/electromagnetic systems (radio, radar, signal analysis)
+- 🛠️ **Building toward:** Kernel & OS design, custom hardware interfaces, and low-level software toolchains
+- 🌱 **Learning right now:** Advanced ARM assembly, memory management internals, and 日本語 (Japanese)
+- 🤝 **Open to collaborate on:** Kernel/OS design, embedded firmware, reverse engineering tools, and systems-level software
+- 🌍 **Languages:** বাংলা (native) · English · 日本語 (learning)
 
-![snake gif](https://github.com/Nabilislam722/Nabilislam722/blob/output/github-contribution-grid-snake.gif)
+---
 
+## 🔍 Areas of Deep Interest
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CPU Architecture     │  Logic gates, ALUs, cache, pipelines │
+│  Assembly Language    │  x86, ARM, RISC-V instruction sets   │
+│  Embedded Systems     │  Bare-metal, RTOS, microcontrollers  │
+│  Reverse Engineering  │  Firmware analysis, binary disasm    │
+│  RF & Electromagnetics│  Radio, radar, signal propagation    │
+│  OS & Kernel Design   │  Memory mgmt, scheduling, syscalls   │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 💻 Tech Stack
+
+### 🔧 Systems & Low-Level
+![C](https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-%23FCC624.svg?style=for-the-badge&logo=linux&logoColor=black)
+![Arduino](https://img.shields.io/badge/Arduino-%2300979D.svg?style=for-the-badge&logo=Arduino&logoColor=white)
+
+### 🌐 Web & Application
+![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-%23339933.svg?style=for-the-badge&logo=node.js&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
+![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-%234479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+
+### ☁️ Tools & Platforms
+![Git](https://img.shields.io/badge/Git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Blender](https://img.shields.io/badge/Blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white)
+![Unity](https://img.shields.io/badge/Unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
+![Photoshop](https://img.shields.io/badge/Adobe%20Photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white)
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=Nabilislam722&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=false" height="165" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nabilislam722&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=false&layout=compact" height="165" />
+
+[![GitHub Streak](https://streak-stats.demolab.com/?user=Nabilislam722&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
+
+</div>
+
+---
+
+## 🚀 What I'm Working On
+
+- 🔩 Deep-diving into **bare-metal embedded development** on ARM Cortex-M
+- 📡 Experimenting with **software-defined radio (SDR)** and signal analysis
+- 🧩 Studying **OS internals** — memory latching, context switching, scheduler design
+- ✈️ Building and flying **FPV drones** (hobby + applied electronics)
+
+---
+
+## 🌌 Side Quests
+
+> *"The more I learn, the more I realize how deep the rabbit hole goes."*
+
+Outside of engineering, I find inspiration in **space exploration**, **antenna theory**, and the intersection of physics and computation. I believe the best engineers are the ones who stay endlessly curious.
+
+---
+
+<div align="center">
+
+![Snake animation](https://github.com/Nabilislam722/Nabilislam722/blob/output/github-contribution-grid-snake.gif)
+
+**Let's build something at the edge of what's possible.**
+*Open to collaborations, research partnerships, and exciting projects.*
+
+</div>
