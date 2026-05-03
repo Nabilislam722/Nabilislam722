@@ -46,7 +46,7 @@ On the **systems side**, I'm fascinated by CPUs, assembly language, embedded har
 └─────────────────────────────────────────────────────────────┘
 
 ```
-![Alt Text](https://github.com/Nabilislam722/Nabilislam722/blob/main/34854.jpg.jpeg)
+![Alt Text](https://github.com/Nabilislam722/Nabilislam722/blob/main/fpv.jpeg)
 
 ---
 
