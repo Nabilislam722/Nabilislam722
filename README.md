@@ -16,10 +16,6 @@
 
 <a href="https://github.com/Nabilislam722/HairGames"><img src="./assets/project-hairgames.svg" alt="HairGames: an arcade of on-chain games on Hemi" width="49%"></a>
 <a href="https://github.com/Nabilislam722/Web3-Games"><img src="./assets/project-lab-rampage.svg" alt="Mad Scientist: Lab Rampage, a side-scrolling run-and-gun with daily raids seeded by Bitcoin blocks" width="49%"></a>
-
-<a href="https://github.com/Nabilislam722/EVM_Governance_Bot"><img src="./assets/project-governance-bot.svg" alt="EVM Governance Bot: vote on Layer 2 proposals from Discord" width="49%"></a>
-<a href="https://github.com/Nabilislam722/Hemi_High-Liqudity_Alert"><img src="./assets/project-apr-alert.svg" alt="Hemi High-APR Alert: finds above-average yields and posts them to X" width="49%"></a>
-
 <a href="https://github.com/Nabilislam722/esp32-realtime-dashboard"><img src="./assets/project-esp32-dashboard.svg" alt="ESP32 Realtime Dashboard: live sensor data over Flask and Socket.IO" width="49%"></a>
 <a href="https://github.com/Nabilislam722/AVR_programs"><img src="./assets/project-avr.svg" alt="AVR Programs: bare-metal C for the ATmega328P" width="49%"></a>
 
