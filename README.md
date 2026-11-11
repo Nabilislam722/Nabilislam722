@@ -10,7 +10,22 @@
 
 <br><br>
 
-<img src="./assets/loadout.svg" alt="Loadout: TypeScript and React, C, C++ and Rust, Solidity, Python, Cloudflare, Figma, Blender, and a Radxa Dragon Q6A as the titan." width="100%" loading="lazy">
+<img src="./assets/projects-header.svg" alt="Projects" width="100%">
+
+<a href="https://github.com/Nabilislam722/Mintora"><img src="./assets/project-mintora.svg" alt="Mintora: NFT marketplace for Bitcoin Layer 2, running on Hemi" width="100%"></a>
+
+<a href="https://github.com/Nabilislam722/HairGames"><img src="./assets/project-hairgames.svg" alt="HairGames: an arcade of on-chain games on Hemi" width="49%"></a>
+<a href="https://github.com/Nabilislam722/Web3-Games"><img src="./assets/project-lab-rampage.svg" alt="Mad Scientist: Lab Rampage, a side-scrolling run-and-gun with daily raids seeded by Bitcoin blocks" width="49%"></a>
+
+<a href="https://github.com/Nabilislam722/EVM_Governance_Bot"><img src="./assets/project-governance-bot.svg" alt="EVM Governance Bot: vote on Layer 2 proposals from Discord" width="49%"></a>
+<a href="https://github.com/Nabilislam722/Hemi_High-Liqudity_Alert"><img src="./assets/project-apr-alert.svg" alt="Hemi High-APR Alert: finds above-average yields and posts them to X" width="49%"></a>
+
+<a href="https://github.com/Nabilislam722/esp32-realtime-dashboard"><img src="./assets/project-esp32-dashboard.svg" alt="ESP32 Realtime Dashboard: live sensor data over Flask and Socket.IO" width="49%"></a>
+<a href="https://github.com/Nabilislam722/AVR_programs"><img src="./assets/project-avr.svg" alt="AVR Programs: bare-metal C for the ATmega328P" width="49%"></a>
+
+<br><br>
+
+<img src="./assets/stack.svg" alt="Tech stack. Systems: C, C++, Rust, Linux, Arduino. Web: TypeScript, JavaScript, React, Tailwind CSS, Framer Motion, Node.js. Backend: Python, Java, C#, MySQL. Web3: Solidity, Ethereum. Cloud: Cloudflare, Google Cloud, Git. Design and 3D: Figma, Blender, Unity, Photoshop, After Effects, Illustrator." width="100%">
 
 <br><br>
 

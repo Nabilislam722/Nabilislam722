@@ -11,6 +11,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import opentype from 'opentype.js';
 import sharp from 'sharp';
+import * as SI from 'simple-icons';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'assets');
@@ -109,13 +110,13 @@ const arcPath = (cx, cy, r, a0, a1) => {
 };
 
 // Section header: orange slash tag, title, meta, rule.
-function header(title, meta, W, y = 52) {
+function header(title, meta, W, y = 52, animate = true) {
   let s = `<path d="M66 ${y - 15}h7l-7 19h-7z" fill="${C.orange}"/>`;
   s += t(title, 82, y, { f: 'condS', s: 18, ls: 3.5, fill: C.ice });
   if (meta) s += t(meta, W - 60, y, { f: 'cond', s: 16, ls: 2.5, fill: C.muted, a: 'end' });
   s += `<line x1="60" y1="${y + 16}" x2="${W - 60}" y2="${y + 16}" stroke="${C.blue}" stroke-opacity=".28"/>`;
   s += `<rect x="60" y="${y + 15}" width="96" height="3" fill="${C.orange}"/>`;
-  return `<g class="in" style="animation-delay:.05s">${s}</g>`;
+  return animate ? `<g class="in" style="animation-delay:.05s">${s}</g>` : `<g>${s}</g>`;
 }
 
 // Typing reveal: a clip rect that grows left to right in steps.
@@ -139,7 +140,7 @@ const BASE_CSS = `
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-delay:0s!important;animation-iteration-count:1!important}}
 `;
 
-function card(name, w, h, body, { css = '', defs = '', aria, shell = true }) {
+function card(name, w, h, body, { css = '', defs = '', aria, shell = true, edge = C.ice }) {
   const CUT = 24;
   const outline = `M${CUT + 0.5} .5H${w - 0.5}V${h - CUT - 0.5}L${w - CUT - 0.5} ${h - 0.5}H.5V${CUT + 0.5}Z`;
   const glyphDefs = [...GLYPHS.values()].filter((e) => e.d).map((e) => `<path id="${e.id}" d="${e.d}"/>`).join('');
@@ -156,7 +157,7 @@ ${shell ? `<path d="${outline}" fill="${C.bg}"/><path d="${outline}" fill="url(#
 <g clip-path="url(#card)">${body}</g>
 <path d="${outline}" fill="none" stroke="${C.blue}" stroke-opacity=".38"/>
 <path d="M.5 ${CUT + 0.5}L${CUT + 0.5} .5H110" fill="none" stroke="${C.orange}" stroke-width="3"/>
-<path d="M${w - 0.5} ${h - CUT - 0.5}L${w - CUT - 0.5} ${h - 0.5}H${w - 110}" fill="none" stroke="${C.ice}" stroke-opacity=".6" stroke-width="2"/>` : body}
+<path d="M${w - 0.5} ${h - CUT - 0.5}L${w - CUT - 0.5} ${h - 0.5}H${w - 110}" fill="none" stroke="${edge}" stroke-opacity=".6" stroke-width="2"/>` : body}
 </svg>
 `;
   fs.writeFileSync(path.join(OUT, `${name}.svg`), svg);
@@ -549,27 +550,47 @@ async function fpv() {
     .jpeg({ quality: 70, mozjpeg: true })
     .toBuffer();
 
+  // ---- OSD readouts: edit these ----
+  const OSD = {
+    rssi: '-42dBm',
+    lq: '100%',
+    status: 'DISARMED',
+    timer: '00:00.0',
+    volts: '24.8V',
+    cells: 6, // battery icon draws one bar per cell
+    capacity: '1600mAh',
+    pilot: 'NABIL',
+    vtx: '5.8G  R1  1000mW',
+    tagline: 'CALL ME AN FPV PILOT TOO',
+  };
+
   const O = { f: 'monoB', s: 20, fill: '#f4f8fb' };
   const L = { ...O, s: 14, fill: '#cfe1ee' };
   const ccx = 600, ccy = 238;
+
+  // battery icon: body grows with the cell count, right edge stays put
+  const bRight = W - 152, bW = OSD.cells * 8 + 4, bLeft = bRight - bW;
+  let cellBars = '';
+  for (let i = 0; i < OSD.cells; i++) cellBars += `M${bLeft + 4 + i * 8} 50h6v12h-6z`;
+
   const body = `<image width="${W}" height="${H}" xlink:href="data:image/jpeg;base64,${jpg.toString('base64')}"/>
 <rect width="${W}" height="${H}" fill="url(#vig)"/>
 <rect width="${W}" height="${H}" fill="url(#scanlines)"/>
 <g class="osd">
-${t('RSSI', 48, 62, L)}${t('-42dBm', 104, 62, O)}
-${t('LQ', 48, 92, L)}${t('100%', 104, 92, O)}
-<g class="blink">${t('DISARMED', ccx, 62, { ...O, fill: C.orange, a: 'middle' })}</g>
-${t('00:00.0', ccx, 92, { ...O, s: 16, a: 'middle' })}
-<path d="M${W - 196} 46h44v20h-44zM${W - 152} 52h4v8h-4z" fill="none" stroke="#f4f8fb" stroke-width="2"/>
-<path d="M${W - 192} 50h8v12h-8zM${W - 182} 50h8v12h-8zM${W - 172} 50h8v12h-8zM${W - 162} 50h8v12h-8z" fill="#f4f8fb"/>
-${t('16.8V', W - 48, 64, { ...O, a: 'end' })}
-${t('4S  1300mAh', W - 48, 92, { ...L, a: 'end' })}
+${t('RSSI', 48, 62, L)}${t(OSD.rssi, 104, 62, O)}
+${t('LQ', 48, 92, L)}${t(OSD.lq, 104, 92, O)}
+<g class="blink">${t(OSD.status, ccx, 62, { ...O, fill: C.orange, a: 'middle' })}</g>
+${t(OSD.timer, ccx, 92, { ...O, s: 16, a: 'middle' })}
+<path d="M${bLeft} 46h${bW}v20h-${bW}zM${bRight} 52h4v8h-4z" fill="none" stroke="#f4f8fb" stroke-width="2"/>
+<path d="${cellBars}" fill="#f4f8fb"/>
+${t(OSD.volts, W - 48, 64, { ...O, a: 'end' })}
+${t(`${OSD.cells}S  ${OSD.capacity}`, W - 48, 92, { ...L, a: 'end' })}
 <g class="hz"><path d="M${ccx - 210} ${ccy}h120M${ccx + 90} ${ccy}h120M${ccx - 210} ${ccy}v8M${ccx + 210} ${ccy}v8" fill="none" stroke="#f4f8fb" stroke-width="2.5"/></g>
 <path d="M${ccx - 22} ${ccy}h14M${ccx + 8} ${ccy}h14M${ccx} ${ccy - 22}v14M${ccx} ${ccy + 8}v14" stroke="#f4f8fb" stroke-width="2.5"/>
 <circle cx="${ccx}" cy="${ccy}" r="3" fill="#f4f8fb"/>
-${t('PILOT', 48, H - 46, { ...O, s: 12, fill: '#cfe1ee' })}${t('NABIL', 112, H - 46, O)}
-${t('CALL ME AN FPV PILOT TOO', ccx, H - 44, { f: 'condB', s: 32, ls: 2, fill: C.ice, a: 'middle' })}
-${t('5.8G  R1  25mW', W - 48, H - 46, { ...O, s: 16, a: 'end' })}
+${t('PILOT', 48, H - 46, { ...O, s: 12, fill: '#cfe1ee' })}${t(OSD.pilot, 112, H - 46, O)}
+${t(OSD.tagline, ccx, H - 44, { f: 'condB', s: 32, ls: 2, fill: C.ice, a: 'middle' })}
+${t(OSD.vtx, W - 48, H - 46, { ...O, s: 16, a: 'end' })}
 </g>`;
 
   card('fpv', W, H, body, {
@@ -584,69 +605,171 @@ ${t('5.8G  R1  25mW', W - 48, H - 46, { ...O, s: 16, a: 'end' })}
   });
 }
 
-// ================================================================ 7. loadout (tech stack)
-function loadout() {
-  const W = 1200, H = 520;
-  const G = 16;
-  const rowsDef = [
-    { y: 92, h: 120, tiles: [
-      ['PRIMARY', 'TYPESCRIPT + REACT', 'JavaScript · Tailwind · Framer Motion'],
-      ['SECONDARY', 'C / C++ / RUST', 'Linux · Arduino · bare-metal'],
-      ['ANTI-TITAN', 'SOLIDITY', 'Ethereum · smart contracts'],
-    ] },
-    { y: 228, h: 120, tiles: [
-      ['ORDNANCE', 'PYTHON', 'Node.js · Java · C# · MySQL'],
-      ['TACTICAL', 'CLOUDFLARE', 'Git · Google Cloud'],
-      ['BOOST', 'FIGMA', 'Photoshop · Illustrator'],
-      ['KIT', 'BLENDER', 'Unity · After Effects'],
-    ] },
-  ];
-  let body = header('LOADOUT  //  PILOT', 'TECH STACK', W);
-  let n = 0;
-  for (const row of rowsDef) {
-    const tw = (W - 120 - (row.tiles.length - 1) * G) / row.tiles.length;
-    row.tiles.forEach(([slot, item, sub], i) => {
-      const x = 60 + i * (tw + G), y = row.y;
-      body += `<g class="tile" style="animation-delay:${(0.2 + n * 0.08).toFixed(2)}s">
-<path d="${chamfer(x, y, tw, row.h, 14)}" fill="${C.panel}" stroke="${C.blue}" stroke-opacity=".45"/>
-<rect x="${x}" y="${y + 18}" width="3" height="18" fill="${C.orange}"/>
-${t(slot, x + 20, y + 33, { f: 'condS', s: 15, ls: 3, fill: C.orange })}
-${t(String(n + 1).padStart(2, '0'), x + tw - 20, y + 33, { s: 12, fill: C.muted, a: 'end', op: 0.6 })}
-${t(item, x + 20, y + 76, { f: 'condB', s: 36, ls: 1, fill: C.text, max: tw - 36 })}
-${t(sub, x + 20, y + 104, { f: 'cond', s: 19, ls: 0.5, fill: C.muted, max: tw - 36 })}
-</g>`;
-      n++;
-    });
+// ================================================================ 7. projects (loadout layout)
+// Each project is its own SVG so every tile can link to its repo in README.md.
+// Static on purpose: no animation.
+const PROJECTS = [
+  {
+    file: 'mintora', repo: 'Mintora', slot: 'TITAN', kind: 'FLAGSHIP  //  NFT MARKETPLACE', name: 'MINTORA',
+    desc: 'NFT marketplace for Bitcoin Layer 2, running on Hemi today. Solidity marketplace contracts, a React + wagmi front end, an Express API, and Cloudflare R2 for media.',
+    tags: ['SOLIDITY', 'REACT', 'WAGMI', 'EXPRESS', 'CLOUDFLARE R2'],
+  },
+  {
+    file: 'hairgames', repo: 'HairGames', slot: 'PRIMARY', kind: 'WEB3 ARCADE', name: 'HAIRGAMES',
+    desc: 'An arcade of on-chain games on Hemi. Play in the browser, put your score on chain, earn Hair Points.',
+    tags: ['TYPESCRIPT', 'HEMI', 'ON-CHAIN'],
+  },
+  {
+    file: 'lab-rampage', repo: 'Web3-Games', slot: 'SECONDARY', kind: 'WEB3 GAME', name: 'MAD SCIENTIST: LAB RAMPAGE',
+    desc: 'Side-scrolling run-and-gun with Spine animation and 10 unlockable guns. Daily raids are seeded by Bitcoin blocks.',
+    tags: ['JAVASCRIPT', 'SPINE', 'BITCOIN'],
+  },
+  {
+    file: 'esp32-dashboard', repo: 'esp32-realtime-dashboard', slot: 'TACTICAL', kind: 'IOT', name: 'ESP32 REALTIME DASHBOARD',
+    desc: 'An ESP32 streams temperature, current and voltage to a Flask + Socket.IO dashboard that updates live.',
+    tags: ['ESP32', 'FLASK', 'SOCKET.IO'],
+  },
+  {
+    file: 'avr', repo: 'AVR_programs', slot: 'BOOST', kind: 'BARE-METAL', name: 'AVR PROGRAMS',
+    desc: 'Bare-metal C for the ATmega328P, built and flashed straight onto the chip with avrdude.',
+    tags: ['C', 'ATMEGA328P', 'AVRDUDE'],
+  },
+];
+
+function wrap(str, o, maxW) {
+  const lines = [];
+  let cur = '';
+  for (const w of str.split(' ')) {
+    const next = cur ? `${cur} ${w}` : w;
+    if (cur && measure(next, o).w > maxW) { lines.push(cur); cur = w; } else cur = next;
   }
+  if (cur) lines.push(cur);
+  return lines;
+}
 
-  // titan slot, full width
-  const y = 364, h = 112, x = 60, tw = W - 120;
-  let bar = '';
-  for (let i = 0; i < 20; i++) bar += `<path d="${seg(x + tw - 300 + i * 12, y + 86, 8, 10, 3)}" fill="${C.orange}" class="tb" style="animation-delay:${(1.2 + i * 0.04).toFixed(2)}s"/>`;
-  body += `<g class="tile" style="animation-delay:${(0.2 + n * 0.08).toFixed(2)}s">
-<path d="${chamfer(x, y, tw, h, 16)}" fill="${C.orange}" fill-opacity=".07" stroke="${C.orange}" stroke-opacity=".7"/>
-<rect x="${x + tw - 120}" y="${y + 14}" width="100" height="12" fill="url(#hatch)"/>
-${t('TITAN', x + 20, y + 33, { f: 'condS', s: 15, ls: 3, fill: C.orange })}
-${t('RADXA DRAGON Q6A', x + 20, y + 78, { f: 'condB', s: 40, ls: 1, fill: C.text })}
-${t('bare-metal bring-up  ·  ISAs: x86 · ARM · RISC-V', x + 20, y + 100, { s: 16, fill: C.muted })}
-${t('READY', x + tw - 20, y + 74, { f: 'condB', s: 30, ls: 4, fill: C.orange, a: 'end', cls: 'pulseTxt' })}
-${bar}
-</g>`;
+// largest font size (down to `min`) at which the text fits
+function fitSize(str, o, maxW, min) {
+  let s = o.s;
+  while (s > min && measure(str, { ...o, s }).w > maxW) s -= 1;
+  return s;
+}
 
-  card('loadout', W, H, body, {
-    aria: 'Loadout. Primary: TypeScript and React, with JavaScript, Tailwind, Framer Motion. Secondary: C, C++, Rust, Linux, Arduino. Anti-titan: Solidity, Ethereum. Ordnance: Python, Node.js, Java, C#, MySQL. Tactical: Cloudflare, Git, Google Cloud. Boost: Figma, Photoshop, Illustrator. Kit: Blender, Unity, After Effects. Titan: Radxa Dragon Q6A.',
-    css: `
-.tile{opacity:0;animation:tile .5s cubic-bezier(.2,.8,.2,1) forwards}
-@keyframes tile{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-.tb{opacity:.15;animation:tb .2s linear forwards}
-@keyframes tb{to{opacity:1}}
-.pulseTxt{animation:pt 2.4s ease-in-out 2s infinite}
-@keyframes pt{50%{opacity:.4}}
-`,
+function tagChips(tags, x, y) {
+  let svg = '';
+  let cx = x;
+  for (const tag of tags) {
+    const w = measure(tag, { f: 'condS', s: 15, ls: 1.5 }).w + 24;
+    svg += `<path d="${chamfer(cx, y, w, 30, 7)}" fill="${C.panel}" stroke="${C.blue}" stroke-opacity=".55"/>${t(tag, cx + 12, y + 21, { f: 'condS', s: 15, ls: 1.5, fill: C.ice })}`;
+    cx += w + 8;
+  }
+  return { svg, end: cx - 8 };
+}
+
+const openRepo = (xr, y) => {
+  const lbl = T('OPEN REPO', xr - 24, y, { f: 'condB', s: 16, ls: 2.5, fill: C.orange, a: 'end' });
+  return `${lbl.svg}<path d="M${xr - 14} ${y - 1}l10 -10m-7 0h7v7" fill="none" stroke="${C.orange}" stroke-width="2" stroke-linecap="square"/>`;
+};
+
+function projects() {
+  // section header strip
+  card('projects-header', 1200, 92, header('LOADOUT  //  PROJECTS', 'SELECT A SLOT TO OPEN THE REPO', 1200, 52, false), {
+    aria: 'Projects',
+  });
+
+  PROJECTS.forEach((p, i) => {
+    const titan = p.slot === 'TITAN';
+    const W = titan ? 1200 : 600, H = titan ? 270 : 250;
+    const X = 34, R = W - 34;
+    let body = '';
+    if (titan) body += `<path d="M0 0H${W}V${H}H0Z" fill="${C.orange}" fill-opacity=".06"/>`;
+    body += `<path d="M${X + 6} 30h7l-7 19h-7z" fill="${C.orange}"/>`;
+    const slot = T(p.slot, X + 22, 46, { f: 'condB', s: 17, ls: 3.5, fill: C.orange });
+    body += slot.svg + t(`//  ${p.kind}`, X + 22 + slot.w + 12, 46, { f: 'cond', s: 16, ls: 2.5, fill: C.muted });
+    body += t(String(i).padStart(2, '0'), R, 46, { s: 13, fill: C.muted, a: 'end', op: 0.7 });
+
+    const titleMax = titan ? 760 : R - X;
+    const ts = fitSize(p.name, { f: 'condB', s: titan ? 74 : 44, ls: 1 }, titleMax, 30);
+    body += t(p.name, X - 2, titan ? 118 : 100, { f: 'condB', s: ts, ls: 1, fill: C.text, max: titleMax });
+
+    const dO = { f: 'cond', s: titan ? 23 : 21, ls: 0.3 };
+    const lines = wrap(p.desc, dO, titan ? 760 : R - X);
+    if (lines.length > 2) throw new Error(`Description of ${p.name} wraps to ${lines.length} lines; keep it to 2`);
+    lines.forEach((ln, k) => { body += t(ln, X, (titan ? 156 : 136) + k * (titan ? 28 : 26), { ...dO, fill: C.soft }); });
+
+    const chips = tagChips(p.tags, X, H - 62);
+    body += chips.svg;
+    body += openRepo(R, H - 40);
+    if (chips.end > R - 150) throw new Error(`Tags of ${p.name} run into OPEN REPO`);
+
+    if (titan) {
+      // static titan readiness block on the right
+      body += `<rect x="${R - 150}" y="${74}" width="150" height="12" fill="url(#hatch)"/>`;
+      body += t('READY', R, 140, { f: 'condB', s: 40, ls: 5, fill: C.orange, a: 'end' });
+      let bar = '';
+      for (let k = 0; k < 16; k++) bar += `<path d="${seg(R - 190 + k * 12, 156, 8, 10, 3)}" fill="${C.orange}"/>`;
+      body += bar;
+    }
+
+    card(`project-${p.file}`, W, H, body, {
+      aria: `${p.name}: ${p.desc} Built with ${p.tags.join(', ')}.`,
+      edge: titan ? C.orange : C.blue,
+    });
   });
 }
 
-// ================================================================ 8. signal footer
+// ================================================================ 8. tech stack (static)
+const STACK = [
+  ['SYSTEMS', [['C', 'c'], ['C++', 'cplusplus'], ['Rust', 'rust'], ['Linux', 'linux'], ['Arduino', 'arduino']]],
+  ['WEB', [['TypeScript', 'typescript'], ['JavaScript', 'javascript'], ['React', 'react'], ['Tailwind CSS', 'tailwindcss'], ['Framer Motion', 'framer'], ['Node.js', 'nodedotjs']]],
+  ['BACKEND', [['Python', 'python'], ['Java', 'openjdk'], ['C#', 'C#'], ['MySQL', 'db']]],
+  ['WEB3', [['Solidity', 'solidity'], ['Ethereum', 'ethereum']]],
+  ['CLOUD', [['Cloudflare', 'cloudflare'], ['Google Cloud', 'googlecloud'], ['Git', 'git']]],
+  ['DESIGN & 3D', [['Figma', 'figma'], ['Blender', 'blender'], ['Unity', 'unity'], ['Photoshop', 'Ps'], ['After Effects', 'Ae'], ['Illustrator', 'Ai']]],
+];
+
+// brand icon from simple-icons, or a monogram tile when the brand isn't in the set
+function icon(key, x, y, size = 22) {
+  if (key === 'db') {
+    // generic database glyph (the MySQL mark includes a wordmark that is unreadable this small)
+    const cx = x + size / 2, w = size * 0.42, e = size * 0.16;
+    return `<g fill="none" stroke="${C.ice}" stroke-width="1.6"><ellipse cx="${cx}" cy="${y + 4 + e / 2}" rx="${w}" ry="${e}"/><path d="M${cx - w} ${y + 4 + e / 2}V${y + size - 4}A${w} ${e} 0 0 0 ${cx + w} ${y + size - 4}V${y + 4 + e / 2}M${cx - w} ${y + size / 2 + 2}A${w} ${e} 0 0 0 ${cx + w} ${y + size / 2 + 2}"/></g>`;
+  }
+  const si = SI['si' + key[0].toUpperCase() + key.slice(1)];
+  if (si && /^[a-z]+$/.test(key)) {
+    return `<path transform="translate(${x} ${y}) scale(${size / 24})" d="${si.path}" fill="${C.ice}"/>`;
+  }
+  return `<rect x="${x + 0.75}" y="${y + 0.75}" width="${size - 1.5}" height="${size - 1.5}" rx="4" fill="none" stroke="${C.ice}" stroke-width="1.5"/>${t(key, x + size / 2, y + size / 2 + 5, { f: 'condB', s: 14, fill: C.ice, a: 'middle' })}`;
+}
+
+function stack() {
+  const W = 1200;
+  const LX = 60, CX = 250, RX = W - 60, CH = 44, GAP = 10;
+  let body = header('TECH STACK', 'LANGUAGES  ·  FRAMEWORKS  ·  TOOLS', W, 52, false);
+  let y = 98;
+  STACK.forEach(([cat, items], ci) => {
+    body += t(cat, LX, y + 28, { f: 'condB', s: 18, ls: 3, fill: C.orange });
+    let x = CX;
+    for (const [name, key] of items) {
+      const w = 14 + 22 + 10 + measure(name, { f: 'condS', s: 20, ls: 0.5 }).w + 16;
+      if (x + w > RX) { x = CX; y += CH + GAP; }
+      body += `<path d="${chamfer(x, y, w, CH, 8)}" fill="${C.panel}" stroke="${C.blue}" stroke-opacity=".45"/>`;
+      body += icon(key, x + 14, y + 11);
+      body += t(name, x + 46, y + 29, { f: 'condS', s: 20, ls: 0.5, fill: C.text });
+      x += w + GAP;
+    }
+    y += CH;
+    if (ci < STACK.length - 1) {
+      body += `<line x1="${LX}" y1="${y + 14}" x2="${RX}" y2="${y + 14}" stroke="${C.blue}" stroke-opacity=".14"/>`;
+      y += 28;
+    }
+  });
+  const H = y + 46;
+  card('stack', W, H, body, {
+    aria: `Tech stack. ${STACK.map(([c, items]) => `${c}: ${items.map((i) => i[0]).join(', ')}`).join('. ')}.`,
+  });
+}
+
+// ================================================================ 9. signal footer
 function signal() {
   const W = 1200, H = 346;
   const top = 92, bot = 176, mid = (top + bot) / 2;
@@ -681,7 +804,7 @@ function signal() {
   });
 }
 
-// ================================================================ 9. link buttons
+// ================================================================ 10. link buttons
 function buttons() {
   const links = [
     ['linkedin', 'LINKEDIN', '01'],
@@ -709,6 +832,7 @@ datapath();
 radar();
 registers();
 await fpv();
-loadout();
+projects();
+stack();
 signal();
 buttons();
