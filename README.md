@@ -41,17 +41,6 @@
 
 <br><br>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nabilislam722/Nabilislam722/output/snake-dark.svg">
-  <img src="https://raw.githubusercontent.com/Nabilislam722/Nabilislam722/output/snake-light.svg" alt="Contribution snake" width="100%" loading="lazy">
-</picture>
-
-<br><br>
-
-<img src="./assets/signal.svg" alt="Let's build something at the edge of what's possible. Open to software, kernel and OS design, embedded firmware, research and experimental projects." width="100%" loading="lazy">
-
-<br><br>
-
 <a href="https://linkedin.com/in/nabil-islam-925958232"><img src="./assets/btn-linkedin.svg" alt="LinkedIn" width="190"></a>&nbsp;
 <a href="https://www.leetcode.com/nabilislam722"><img src="./assets/btn-leetcode.svg" alt="LeetCode" width="190"></a>&nbsp;
 <a href="https://discord.gg/alpha963"><img src="./assets/btn-discord.svg" alt="Discord" width="190"></a>&nbsp;
