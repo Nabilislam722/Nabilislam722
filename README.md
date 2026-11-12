@@ -33,10 +33,6 @@
 
 <br><br>
 
-<img src="./assets/registers.svg" alt="Areas of deep interest: CPU architecture, assembly, embedded systems, reverse engineering, RF and electromagnetics, OS and kernel design." width="100%" loading="lazy">
-
-<br><br>
-
 <img src="./assets/fpv.svg" alt="My FPV kit with a goggles style on-screen display. Call me an FPV pilot too." width="100%" loading="lazy">
 
 <br><br>
